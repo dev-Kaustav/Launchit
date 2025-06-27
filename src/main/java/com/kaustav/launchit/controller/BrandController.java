@@ -1,7 +1,7 @@
 package com.kaustav.launchit.controller;
 
 import com.kaustav.launchit.db.Brand;
-import com.kaustav.launchit.db.BrandService;
+import com.kaustav.launchit.service.BrandService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,6 @@
-package com.kaustav.launchit.db;
+package com.kaustav.launchit.service;
+import com.kaustav.launchit.db.Employee;
+import com.kaustav.launchit.db.EmployeeRepository;
 
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
