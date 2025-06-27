@@ -6,19 +6,17 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "brands")
-/** Entity representing a brand or manufacturer. */
-public class Brand {
+@Table(name = "warehouses")
+/** Storage location for inventory. */
+public class Warehouse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String name;
+    private String location;
 
-    @Column(name = "contact_email")
-    private String contactEmail;
-
-    private String industry;
+    @Column(name = "manager_id")
+    private Integer managerId;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
