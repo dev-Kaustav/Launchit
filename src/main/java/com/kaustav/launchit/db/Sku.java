@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "skus")
+/** Stock keeping unit for a product. */
 public class Sku {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
