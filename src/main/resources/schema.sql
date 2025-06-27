@@ -110,3 +110,11 @@ CREATE TABLE credits (
     settled BOOLEAN DEFAULT FALSE,
     party_type VARCHAR CHECK (party_type IN ('brand', 'retailer'))
 );
+
+-- Users for authentication
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR NOT NULL UNIQUE,
+    password VARCHAR NOT NULL,
+    created_at TIMESTAMP DEFAULT now()
+);
