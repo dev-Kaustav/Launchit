@@ -2,7 +2,7 @@ package com.kaustav.launchit.controller;
 
 import com.kaustav.launchit.db.OrderItem;
 import com.kaustav.launchit.db.OrderItemId;
-import com.kaustav.launchit.db.OrderItemService;
+import com.kaustav.launchit.service.OrderItemService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

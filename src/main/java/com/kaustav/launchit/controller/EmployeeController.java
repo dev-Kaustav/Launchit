@@ -1,7 +1,7 @@
 package com.kaustav.launchit.controller;
 
 import com.kaustav.launchit.db.Employee;
-import com.kaustav.launchit.db.EmployeeService;
+import com.kaustav.launchit.service.EmployeeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
