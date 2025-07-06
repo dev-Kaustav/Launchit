@@ -52,8 +52,8 @@ public class AuthService {
      */
     public boolean validate(String token) {
         try {
-            Jwts.parserBuilder()
-                    .setSigningKey(Keys.hmacShaKeyFor(secret))
+            Jwts.parser()
+                    .verifyWith(Keys.hmacShaKeyFor(secret))
                     .build()
                     .parseClaimsJws(token);
             return true;
